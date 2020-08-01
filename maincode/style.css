@@ -1,0 +1,65 @@
+body{
+    background-image: url(././PinClipart.com_track-and-field-clipart_384152.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 750px;
+    background-position: center;
+    background-size: 100%;
+    margin: 20px 20px auto;
+} 
+div > #main-header{
+    text-align: center; 
+    border: 2px solid gold;  
+    margin-top: 175px;
+}
+
+
+/* css for the learn to play modal */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+#modal {
+	background: radial-gradient(circle, rgba(43,138,33,1) 0%, rgba(124,38,50,1) 100%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+}
+#modal-textbox {
+	background-color: ghostwhite;
+	height: 350px;
+	width: 550px;
+	border-radius: 10px;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*This will give the box some depth.*/
+	padding: 20px;
+	line-height: 150%;
+    font-family: Kalam, arial;
+    font-size: 17px;
+    color: #7c2632;
+}
+#modal-footer {
+	text-align: right;
+}
+#modal-heading {
+    padding-bottom: 15px;
+    color: green;
+}
+.modal-buttons {
+	padding: 14px 18px;
+	background-color: green;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+    color: ghostwhite;
+	font-family: 'Arial';
+	cursor: pointer;
+}
