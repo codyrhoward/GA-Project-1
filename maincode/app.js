@@ -13,4 +13,13 @@
     $openBtn.on('click', openModal);
     $closeBtn.on('click', closeModal);
 
+///////////////////////////////////////////////////////
 
+// building card that will randomly generate a function that determines the player move.
+
+
+const firstCard = (event) =>{
+$blueRun1 = $('#blue-runner').animate({left:'400px'}, 5000)
+$(event.currentTarget).$blueRun1
+}
+$('#run-btn').on('click', firstCard)
