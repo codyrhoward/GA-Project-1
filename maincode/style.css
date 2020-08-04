@@ -1,9 +1,10 @@
 
 /* css for the learn to play modal */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap'); */
 /* 
+
 #modal {
 	background: radial-gradient(circle, rgba(43,138,33,1) 0%, rgba(124,38,50,1) 100%);
 	position: fixed;
@@ -70,9 +71,10 @@ body{
     background-size: 100%;
     margin: 20px 20px auto; 
 }*/
- body{
-     border: 1px solid gold;
- }
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
 div > #main-header{
     text-align: center; 
     border: 2px solid gold;  
@@ -83,31 +85,100 @@ div > #main-header{
     border: 1px solid purple
 }
 #play-game-btn{
-        padding: 14px 18px;
-        background-color: blue;
-        border: none;
-        outline: none;
-        border-radius: 10px;
-        color: ghostwhite;
-        font-family: 'Arial';
-        cursor: pointer;
-        text-decoration: none;
-        margin: 100px;
-        border: 1px solid red;
-    }
+    padding: 14px 18px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: ghostwhite;
+    font-family: 'Arial';
+    cursor: pointer;
+    text-decoration: none;
+    margin: 100px;
+    border: 1px solid blue;
+}
 
 /* styling for level one page */
-
+html{
+    height: 100vh;
+}
+#home-button{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 2px;
+    font-family: VT323, monospace;
+}
+#level-one{
+    background: ghostwhite;
+}
 #blue-runner {
     position:absolute;
-    top:270px;
-    left:0px;
+    top:540px;
+    left:200px;
+    right:200px;
     width:100px;
   }
 #red-runner {
     position:absolute;
-    top:120px;
-    left:0px;
+    top:420px;
+    left:200px;
+    right: 200px;
     width:100px;
   }
+#finish-line{
+    position:absolute;
+    top:450px;
+    left:875px;
+    right: 200px;
+    width: 120px;
+}
+.blue-moves{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    height: 130px;
+    width: 100%;  
+}
+.run-button{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: VT323, monospace;
+    font-size: 30px;
+    color: rgb(83, 171, 224);
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.red-moves{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    height: 130px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.red-run-button{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: VT323, monospace;
+    font-size: 30px;
+    color: rgb(196, 55, 37);
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+}
+
+.run-button:hover{
+    cursor: pointer;
+    border: 3px solid rgb(83, 171, 224);
+}
+.red-run-button:hover{
+    cursor: pointer;
+    border: 3px solid rgb(196, 55, 37);
+}
+
+
+
 

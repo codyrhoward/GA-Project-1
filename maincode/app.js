@@ -19,19 +19,24 @@
 
 // These functions determine the amount of pixels our blue-runner will move across the screen. These will all be possibilities for the runner
 const cardOneMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'20px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'220px'}, 1000)
+    $cardOne = $("#run-button-1").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
 }
 const cardOneMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'40px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'240px'}, 1000)
+    $cardOne = $("#run-button-1").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
 }
 const cardOneMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'60px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'260px'}, 1000)
+    $cardOne = $("#run-button-1").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
 }
 const cardOneMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'80px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'280px'}, 1000)
+    $cardOne = $("#run-button-1").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
 }
 const cardOneMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'100px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'300px'}, 1000)
+    $cardOne = $("#run-button-1").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -40,7 +45,7 @@ const getMovesOne =(arr)=> {
     console.log('test')
     return arr[Math.floor(Math.random() * arr.length)]
 }
-$('#run-button').on('click', getMovesOne(run))
+$('#run-button-1').on('click', getMovesOne(run))
 // $('#run-button').on('click', () => getMoves(run))
 
 
@@ -48,19 +53,24 @@ $('#run-button').on('click', getMovesOne(run))
 
 //functions to be the possibilities for card two.
 const cardTwoMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'120px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'320px'}, 1000)
+    $cardOne = $("#run-button-2").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardTwoMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'140px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'340px'}, 1000)
+    $cardOne = $("#run-button-2").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardTwoMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'160px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'360px'}, 1000)
+    $cardOne = $("#run-button-2").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardTwoMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'180px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'380px'}, 1000)
+    $cardOne = $("#run-button-2").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardTwoMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'200px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'400px'}, 1000)
+    $cardOne = $("#run-button-2").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
     
     //random generator for card two. Player will get one of these functions ran on the click.
@@ -76,19 +86,24 @@ $('#run-button-2').on('click', getMovesTwo(runTwo))
 /////////////////////////////////////////////////////////
 
 const cardThreeMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'220px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'420px'}, 1000)
+    $cardOne = $("#run-button-3").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardThreeMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'240px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'440px'}, 1000)
+    $cardOne = $("#run-button-3").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardThreeMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'260px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'460px'}, 1000)
+    $cardOne = $("#run-button-3").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardThreeMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'280px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'480px'}, 1000)
+    $cardOne = $("#run-button-3").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardThreeMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'300px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'500px'}, 1000)
+    $cardOne = $("#run-button-3").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
     
     //random generator for card two. Player will get one of these functions ran on the click.
@@ -104,19 +119,24 @@ $('#run-button-3').on('click', getMovesThree(runThree))
 //////////////////////////////////////////////////////////////////
 
 const cardFourMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'320px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'520px'}, 1000)
+    $cardOne = $("#run-button-4").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFourMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'340px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'540px'}, 1000)
+    $cardOne = $("#run-button-4").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFourMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'360px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'560px'}, 1000)
+    $cardOne = $("#run-button-4").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFourMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'380px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'580px'}, 1000)
+    $cardOne = $("#run-button-4").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFourMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'400px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'600px'}, 1000)
+    $cardOne = $("#run-button-4").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
     
     //random generator for card two. Player will get one of these functions ran on the click.
@@ -132,19 +152,24 @@ $('#run-button-4').on('click', getMovesFour(runFour))
 /////////////////////////////////////////////////////////////////
 
 const cardFiveMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'420px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'620px'}, 1000)
+    $cardOne = $("#run-button-5").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFiveMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'440px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'640px'}, 1000)
+    $cardOne = $("#run-button-5").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFiveMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'460px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'660px'}, 1000)
+    $cardOne = $("#run-button-5").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFiveMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'480px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'680px'}, 1000)
+    $cardOne = $("#run-button-5").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardFiveMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'500px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'700px'}, 1000)
+    $cardOne = $("#run-button-5").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
     
     //random generator for card two. Player will get one of these functions ran on the click.
@@ -161,19 +186,24 @@ $('#run-button-5').on('click', getMovesFive(runFive))
 
 
 const cardSixMoveOne = (event) =>{
-    $blueRun1 = $('#blue-runner').animate({left:'520px'}, 1000)
+    $blueRun1 = $('#blue-runner').animate({left:'720px'}, 1000)
+    $cardOne = $("#run-button-6").text('move 1 stride').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardSixMoveTwo = (event) =>{
-    $blueRun2 = $('#blue-runner').animate({left:'540px'}, 1000)
+    $blueRun2 = $('#blue-runner').animate({left:'740px'}, 1000)
+    $cardOne = $("#run-button-6").text('move 2 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardSixMoveThree = (event) =>{
-    $blueRun3 = $('#blue-runner').animate({left:'560px'}, 1000)
+    $blueRun3 = $('#blue-runner').animate({left:'760px'}, 1000)
+    $cardOne = $("#run-button-6").text('move 3 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardSixMoveFour = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'580px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'780px'}, 1000)
+    $cardOne = $("#run-button-6").text('move 4 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
 const cardSixMoveFive = (event) =>{
-    $blueRun4 = $('#blue-runner').animate({left:'600px'}, 1000)
+    $blueRun4 = $('#blue-runner').animate({left:'800px'}, 1000)
+    $cardOne = $("#run-button-6").text('move 5 strides').css('background', 'rgb(83, 171, 224)').css('color', 'ghostwhite');
     }
     
     //random generator for card two. Player will get one of these functions ran on the click.
@@ -189,19 +219,24 @@ $('#run-button-6').on('click', getMovesSix(runSix))
 ////////////////////////////////////////////////////RED-RUNNER///////////////////////////////////
 
 const redCardOneMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'20px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'220px'}, 1000)
+    $cardOne = $("#red-run-button-1").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardOneMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'40px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'240px'}, 1000)
+    $cardOne = $("#red-run-button-1").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardOneMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'60px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'260px'}, 1000)
+    $cardOne = $("#red-run-button-1").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardOneMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'80px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'280px'}, 1000)
+    $cardOne = $("#red-run-button-1").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardOneMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'100px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'300px'}, 1000)
+    $cardOne = $("#red-run-button-1").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -210,24 +245,29 @@ const getRedMovesOne =(arr)=> {
     console.log('test')
     return arr[Math.floor(Math.random() * arr.length)]
 }
-$('#red-run-button').on('click', getRedMovesOne(redRun))
+$('#red-run-button-1').on('click', getRedMovesOne(redRun))
 
 //////////////////////////////////////////////////////////////////////
 
 const redCardTwoMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'120px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'320px'}, 1000)
+    $cardOne = $("#red-run-button-2").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardTwoMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'140px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'340px'}, 1000)
+    $cardOne = $("#red-run-button-2").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardTwoMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'160px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'360px'}, 1000)
+    $cardOne = $("#red-run-button-2").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardTwoMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'180px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'380px'}, 1000)
+    $cardOne = $("#red-run-button-2").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardTwoMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'200px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'400px'}, 1000)
+    $cardOne = $("#red-run-button-2").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -240,19 +280,24 @@ $('#red-run-button-2').on('click', getRedMovesTwo(redRunTwo))
 ////////////////////////////////////////////////////////////////////
 
 const redCardThreeMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'220px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'420px'}, 1000)
+    $cardOne = $("#red-run-button-3").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardThreeMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'240px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'440px'}, 1000)
+    $cardOne = $("#red-run-button-3").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardThreeMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'260px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'460px'}, 1000)
+    $cardOne = $("#red-run-button-3").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardThreeMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'280px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'480px'}, 1000)
+    $cardOne = $("#red-run-button-3").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardThreeMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'300px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'500px'}, 1000)
+    $cardOne = $("#red-run-button-3").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -265,19 +310,24 @@ $('#red-run-button-3').on('click', getRedMovesThree(redRunThree))
 /////////////////////////////////////////////////////////////////////////
 
 const redCardFourMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'320px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'520px'}, 1000)
+    $cardOne = $("#red-run-button-4").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFourMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'340px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'540px'}, 1000)
+    $cardOne = $("#red-run-button-4").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFourMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'360px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'560px'}, 1000)
+    $cardOne = $("#red-run-button-4").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFourMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'380px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'580px'}, 1000)
+    $cardOne = $("#red-run-button-4").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFourMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'400px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'600px'}, 1000)
+    $cardOne = $("#red-run-button-4").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -290,19 +340,24 @@ $('#red-run-button-4').on('click', getRedMovesFour(redRunFour))
 //////////////////////////////////////////////////////////////////////////////
 
 const redCardFiveMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'420px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'620px'}, 1000)
+    $cardOne = $("#red-run-button-5").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFiveMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'440px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'640px'}, 1000)
+    $cardOne = $("#red-run-button-5").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFiveMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'460px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'660px'}, 1000)
+    $cardOne = $("#red-run-button-5").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFiveMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'480px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'680px'}, 1000)
+    $cardOne = $("#red-run-button-5").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardFiveMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'500px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'700px'}, 1000)
+    $cardOne = $("#red-run-button-5").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -315,19 +370,24 @@ $('#red-run-button-5').on('click', getRedMovesFive(redRunFive))
 ////////////////////////////////////////////////////////////////////////////
 
 const redCardSixMoveOne = (event) =>{
-    $redRun1 = $('#red-runner').animate({left:'520px'}, 1000)
+    $redRun1 = $('#red-runner').animate({left:'720px'}, 1000)
+    $cardOne = $("#red-run-button-6").text('move 1 stride').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardSixMoveTwo = (event) =>{
-    $redRun2 = $('#red-runner').animate({left:'540px'}, 1000)
+    $redRun2 = $('#red-runner').animate({left:'740px'}, 1000)
+    $cardOne = $("#red-run-button-6").text('move 2 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardSixMoveThree = (event) =>{
-    $redRun3 = $('#red-runner').animate({left:'560px'}, 1000)
+    $redRun3 = $('#red-runner').animate({left:'760px'}, 1000)
+    $cardOne = $("#red-run-button-6").text('move 3 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardSixMoveFour = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'580px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'780px'}, 1000)
+    $cardOne = $("#red-run-button-6").text('move 4 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 const redCardSixMoveFive = (event) =>{
-    $redRun4 = $('#red-runner').animate({left:'600px'}, 1000)
+    $redRun4 = $('#red-runner').animate({left:'800px'}, 1000)
+    $cardOne = $("#red-run-button-6").text('move 5 strides').css('background', 'rgb(196, 55, 37)').css('color', 'ghostwhite');
 }
 
 // this is the random generator to determine which function is ran on the click for the blue-runner.
@@ -335,26 +395,10 @@ let redRunSix = [redCardSixMoveOne, redCardSixMoveTwo, redCardSixMoveThree, redC
 const getRedMovesSix =(arr)=> {
     return arr[Math.floor(Math.random() * arr.length)]
 }
-$('#red-run-button-6').on('click', getRedMovesSix(redRunSix))
+$('#red-run-button-6').on('click', getRedMovesSix(redRunSix));
 
 
 
-
-
-
-
-
-
-
-   // let newPos;
-    // let temp;
-    // for(let i = run.length -1; i > 0; i--){
-    //     newPos = Math.floor(Math.random() * (i + 1))
-    //     temp = arr[i];
-    //     arr[i] = arr[newPos]
-    //     arr[newPos] = temp
-
-// return arr;
-// $(event.currentTarget).run[temp]
-
-// getMoves(run)
+ const getResults =()=>{
+    
+}
