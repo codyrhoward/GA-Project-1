@@ -1,104 +1,116 @@
 
-/* css for the learn to play modal */
-/* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap'); */
-/* 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 #modal {
-	background: radial-gradient(circle, rgba(43,138,33,1) 0%, rgba(124,38,50,1) 100%);
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
-	/* overflow: auto; */
-	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
-    /* display: none; */
-    /* border: 3px solid pink; */
-/* } */ 
-/* #modal-textbox {
-	background-color: ghostwhite;
+	overflow: auto; 
+    display: none; 
+    background: rgba(0, 0, 0, 0.4);
+    color: gray;
+ } 
+#modal-textbox {
+    background-color: ghostwhite;
 	height: 350px;
-	width: 550px;
-	border-radius: 10px;
+    width: 550px;
+    overflow: auto;
+	border-radius: 4px;
 	margin: 150px auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 20px;
 	line-height: 150%;
-    font-family: Kalam, arial;
-    font-size: 17px;
-    color: #7c2632;
-    border: 2px solid brown;
-} */
-/* #modal-footer {
-    text-align: right;
-    border:2px solid black; 
+    font-family: VT323, monospace;
+    font-size: 25px;
+} 
+#modal-footer{
+    display: flex;
+    justify-content: flex-end;
+}
+#close{
+    display: flex;
+    justify-content: flex-end;
+    font-family: VT323, monospace;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: orangered;
 }
 #modal-heading {
     padding-bottom: 15px;
-    color: green;
-    border: 1px solid orange;
-} */
-/* .modal-buttons {
+    color: orangered;
+    font-family: VT323, monospace;
+    font-size: 50px;
+}
+.modal-buttons {
     display: flex;
     justify-content: center;
 	padding: 14px 18px;
-	background-color: green;
+	background-color: gray;
 	border: none;
 	outline: none;
-	border-radius: 10px;
+	border-radius: 4px;
     color: ghostwhite;
-	font-family: 'Arial';
+    font-family: VT323, monospace;
     cursor: pointer;
-    border: 1px solid turquoise;
-} */
-/* #openModal{
-    border: 2px solid gray;
+} 
+.open-container{
     display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+#openModal{
     text-align: center;
+    font-size: 17px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+#play-game-btn{
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 4px;
+    padding: 40px 55px;
+    font-family: VT323, monospace;
+    color: ghostwhite;
+    font-size: 17px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* .giphy-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
 } */
+/* #red{
+    width: 100px;
+    height: 100px;
+} */
+/* #blue{
+    width: 100px;
+    height: 100px;
+} */
+#openModal:hover{
+    border: 3px solid orangered;
+}
+#play-game-btn:hover{
+    border: 3px solid orangered;
+}
+
 /* css for main */
-/* 
-body{
-    background-image: url(././PinClipart.com_track-and-field-clipart_384152.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    min-height: 750px;
-    background-position: center;
-    background-size: 100%;
-    margin: 20px 20px auto; 
-}*/
-
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+ 
 
 div > #main-header{
-    text-align: center; 
-    border: 2px solid gold;  
+    text-align: center;   
     margin-top: 140px;
-    font-size: 100px;
-    color: rgb(238, 107, 79);
-    font-family: Kalam, cursive;
-    border: 1px solid purple
-}
-#play-game-btn{
-    padding: 14px 18px;
-    background-color: blue;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    color: ghostwhite;
-    font-family: 'Arial';
-    cursor: pointer;
-    text-decoration: none;
-    margin: 100px;
-    border: 1px solid blue;
+    margin-bottom: 60px;
+    font-size: 150px;
+    color: orangered;
+    font-family: VT323, monospace;
 }
 
 /* styling for level one page */
+
 html{
     height: 100vh;
 }
