@@ -116,31 +116,37 @@ html{
 }
 #home-button{
     text-decoration: none;
+    background-color: gray;
+    color: ghostwhite;
     border: 1px solid black;
-    padding: 3px;
+    padding: 7px;
     border-radius: 2px;
     font-family: VT323, monospace;
+}
+#home-button:hover{
+    cursor: pointer;
+    border: 2px solid orangered;
 }
 #level-one{
     background: ghostwhite;
 }
 #blue-runner {
     position:absolute;
-    top:540px;
+    top:510px;
     left:200px;
     right:200px;
     width:100px;
   }
 #red-runner {
     position:absolute;
-    top:420px;
+    top:390px;
     left:200px;
     right: 200px;
     width:100px;
   }
 #finish-line{
     position:absolute;
-    top:450px;
+    top:440px;
     left:875px;
     right: 200px;
     width: 120px;
@@ -189,6 +195,29 @@ html{
 .red-run-button:hover{
     cursor: pointer;
     border: 3px solid rgb(196, 55, 37);
+}
+.race-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    height: 50vh;
+}
+#race-again, #next-race{
+    text-decoration: none;
+    background-color: gray;
+    color: ghostwhite;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 2px;
+    font-family: VT323, monospace;
+}
+#next-race:hover{
+    cursor: pointer;
+    border: 2px solid orangered;
+}
+#race-again:hover{
+    cursor: pointer;
+    border: 2px solid orangered;
 }
 
 
