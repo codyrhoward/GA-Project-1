@@ -1,7 +1,7 @@
    
 let redPlayerPos;
 let bluePlayerPos;
-   
+const $results = document.querySelector("#results-text");
    //Grabbing Elements
     const $openBtn = $('#openModal');
     const $modal = $('#modal');
@@ -26,11 +26,11 @@ let bluePlayerPos;
 
 const checkWin =()=>{
     if(redPlayerPos > bluePlayerPos) {
-        alert('Red Wins')
+        $('#results-text').html('Red Runner Wins - Race Again!').css('color', 'rgb(196, 55, 37)')
     }else if(bluePlayerPos > redPlayerPos){
-        alert('Blue Wins')
+        $('#results-text').html('Blue Runner Wins - Race Again!').css('color', 'rgb(83, 171, 224)')
     }else{
-        alert('its a tie')
+        $('#results-text').html('Its a Tie - Race Again!').css('color', 'gray')
     }
 }
 
