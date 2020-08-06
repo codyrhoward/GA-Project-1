@@ -26,11 +26,11 @@ const $results = document.querySelector("#results-text");
 
 const checkWin =()=>{
     if(redPlayerPos > bluePlayerPos) {
-        $('#results-text').html('Red Runner Wins - Race Again!').css('color', 'rgb(196, 55, 37)')
+        $('#results-text').html('Red Runner Wins!').css('color', 'rgb(196, 55, 37)')
     }else if(bluePlayerPos > redPlayerPos){
-        $('#results-text').html('Blue Runner Wins - Race Again!').css('color', 'rgb(83, 171, 224)')
+        $('#results-text').html('Blue Runner Wins!').css('color', 'rgb(83, 171, 224)')
     }else{
-        $('#results-text').html('Its a Tie - Race Again!').css('color', 'gray')
+        $('#results-text').html('Its a Tie! - Race Again!').css('color', 'gray')
     }
 }
 
