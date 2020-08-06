@@ -203,7 +203,7 @@ html{
     align-items: flex-end; 
     height: 50vh;
 }
-#race-again, #next-race{
+#race-again{
     text-decoration: none;
     background-color: gray;
     color: ghostwhite;
